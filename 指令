@@ -1,0 +1,75 @@
+git status 查看仓库当前的状态
+
+git diff 查看具体修改了什么内容
+
+git diff HEAD – 命令可以查看工作区和版本库里面最新版本的区别
+
+git add 添加到暂存
+
+git add -f 假如文件被忽略这样可以强制添加
+
+git commit -m “balabalabala” 提交暂存区的文件到本地仓库
+
+git log --graph --pretty=oneline 查看日志
+
+git reset --hard HEAD^ (git reset --hard 版本编号) 版本回退
+
+git reset HEAD 添加到了暂存区时，想丢弃修改
+
+git checkout – 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时
+
+git rm 从版本库中删除该文件(然后commit)
+
+git remote 查看远程库信息
+
+git remote -v 更加详细的查看
+
+git remote add origin 地址 本地关联远程库
+
+git clone 地址 克隆远程库
+
+git branch 查看当前分支
+
+git branch 创建分支
+
+git checkout 切换分支
+
+git checkout -b 我们创建分支，然后切换到分支
+
+git merge 合并分支到当前分支
+
+git branch -d 删除分支
+
+git branch -D 强行删除
+
+git pull origin 拉取
+
+git push origin 推送
+
+git stash 把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+
+git stash list 查看贮藏区
+
+git stash apply 恢复后，stash内容并不删除
+
+git stash drop 删除贮藏区的内容
+
+git stash pop 恢复的同时把stash内容也删了
+
+git rebase 变基(线路变得好看)
+
+git tag 打标签
+
+git tag -a -m “balabalbal…” 可以指定标签信息
+
+git tag 查看所有标签
+
+git show 查看该标签版本信息
+
+git tag -d 删除标签
+
+git push origin 推送标签到远程
+
+git push origin --tags 一次性推送全部尚未推送到远程的本地标签
+
+git push origin :refs/tags/ 可以删除一个远程标签
